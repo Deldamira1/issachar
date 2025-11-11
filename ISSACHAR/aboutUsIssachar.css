@@ -1,0 +1,152 @@
+/* --- A. Mission Statement Section (CSS Grid Layout) --- */
+.mission-statement {
+    display: grid;
+    /* Two columns: 60% for text, 40% for graphic */
+    grid-template-columns: 3fr 2fr; 
+    gap: 50px;
+    padding: 100px 5%;
+    background-color:  #bdc1e3; /*#f8fcf8; Off-white background */
+    align-items: center;
+}
+
+.mission-text h1 {
+    font-size: 3em;
+    color: #032167;; /* #004d40;Deep Green */
+    border-bottom: 3px solid #032167; /* #ff6f00;Orange underline accent */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.mission-text .subtitle {
+    font-size: 1.4em;
+    color: #6a6a6a;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.mission-text p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.mission-graphic [Image] {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+/* --- B. Core Values Section (Fancy Grid & Animation) --- cdd6db */
+.core-values {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #cddff5; /* Light teal background */
+}
+
+.core-values h2 {
+    color: #032167; /*#004d40;*/
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.values-container {
+    display: flex; /* Simplifies alignment of the three cards */
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    flex: 1;
+    background: white;
+    padding: 40px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease-in-out; /* Smooth transition for hover */
+}
+
+.value-card:hover {
+    transform: translateY(-10px) scale(1.03); /* Lift and slightly enlarge on hover */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.value-card .icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.value-card h3 {
+    color: #032167; /* Orange Accent */
+    margin-bottom: 15px;
+}
+
+/* --- C. Meet the Team Section (Modern Grid) --- */
+.team-section {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.team-section h2 {
+    color:#032167;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+    width: 280px;
+}
+
+.member-photo {
+    /* Placeholder for the image */
+    width: 200px; 
+    height: 200px; 
+    margin: 0 auto 15px;
+    background-color: #ccc;
+    border-radius: 50%; /* Circular images are fancier */
+    border: 5px solid #032167; /* #ff6f00;#ff6f00;vAccent border */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover .member-photo {
+    transform: scale(1.05); /* Zoom in effect on image hover */
+}
+
+.team-member h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.team-member .role {
+    color: #6a6a6a;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.profile-link {
+    color: #032167;;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #032167;;
+}
+
+footer {
+    background-color:#032167;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: initial;
+    bottom: 0;
+    width: 100%;
+}

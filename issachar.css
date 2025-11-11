@@ -1,0 +1,64 @@
+/* Basic Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8fcf8; /*#f4f4f9; */
+    color: #333;
+}
+
+header {
+    background-color: #032167;  /* #2664f7; #004d40; Deep Green */
+    color: white;
+    padding: 1em 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #d0dff8; /*#e0f2f1; Light Teal */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #2664f7; /*#1d324d;  #ff6f00;Orange Accent */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color:#032167;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
